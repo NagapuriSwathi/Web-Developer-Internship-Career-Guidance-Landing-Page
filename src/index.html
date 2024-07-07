@@ -102,7 +102,7 @@
             </section>
     
             <section id="instructions" class="text-center">
-                <h4><a href="#" class="text-blue-500 underline decoration-blue-600">Instructions</a></h4>
+                <h4><a href="#" id="instructions-link" class="text-blue-500 underline decoration-blue-600" onclick="openInstructions()">Instructions</a></h4>
                 <p class="hidden">Answer all 60 questions as they pertain to you in a fulfilling work environment. There are no wrong answers. If you are undecided, choose the answer that describes you more often.</p>
                 <div class="flex gap-4 justify-center mt-8">
                     <div class="flex gap-4 flex-col items-center relative group">
@@ -471,5 +471,13 @@
             </div>
         </footer>
     </div>
+
+   <script>
+        let instructionsLink = document.getElementById("instructions-link");
+        let instructions = document.getElementById("instructions-for-test");
+        function openInstructions(){
+            instructions.style.display = "block";
+        }
+    </script>
 </body>
 </html>
